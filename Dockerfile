@@ -2,7 +2,7 @@
 FROM maven AS stage1
 COPY ./src /usr/src/app/src
 COPY pom.xml /usr/src/app
-Run mvn -f /usr/src/app/pom.xml package
+RUN mvn -f /usr/src/app/pom.xml package
 
 
 
